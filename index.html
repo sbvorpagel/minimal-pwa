@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>PWA</title>
+		<link rel="manifest" href="./manifest.json">
+	</head>
+	<body>
+		<p>PWA?</p>
+	</body>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./sw.js');
+		}
+	</script>
+</html>
