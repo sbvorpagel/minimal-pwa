@@ -12,7 +12,7 @@ self.addEventListener('fetch', function(event) {
 	event.repondWith(
 		caches
 			.match(event.request)
-			.then(function() {
+			.then(function(response) {
 				return response || fetch(event.request);
 			})
 	);
